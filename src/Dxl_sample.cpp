@@ -1,13 +1,14 @@
 #include <Arduino.h>
 #include<Dxl.h>
 
+// IDは，モータ個別にDynamixel Wizard2で割り振ってください．
+int id=1;
 Dxl Dxl(1,&Serial);
 
 void setup(){
   Serial.begin(115200);
 
-   // IDは，モータ個別にDynamixel Wizard2で割り振ってください．
-  int id=1;
+   
 
   // 制御設定
   //1   Velocity Control Mode
