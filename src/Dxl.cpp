@@ -2,7 +2,7 @@
 
 Dxl::Dxl(int id,HardwareSerial *ser){
     ID=id;
-    HardwareSerial *serial=ser;
+    serial=ser;
     cbuf[0]  = (unsigned char)0xFF;     // ヘッダー1
     cbuf[1]  = (unsigned char)0xFF;     // ヘッダー2
     cbuf[2]  = (unsigned char)0xFD;     // ヘッダー3

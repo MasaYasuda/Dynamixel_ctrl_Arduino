@@ -21,10 +21,10 @@ void setup(){
 void loop(){
   Dxl.servo_speed(0);
   delay(1000);
-  Dxl.servo_speed(1022);
+  Dxl.servo_speed(120);//初期設定では最大速度が±128
   delay(1000);
   Dxl.servo_speed(0);
   delay(1000);
-  Dxl.servo_speed(-1023);
+  Dxl.servo_speed(-120);
   delay(1000);
 }
