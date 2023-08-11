@@ -7,9 +7,6 @@ Dxl Dxl(1,&Serial);
 
 void setup(){
   Serial.begin(115200);
-
-   
-
   // 制御設定
   //1   Velocity Control Mode
   //3   Position Control Mode

@@ -70,6 +70,7 @@ void Dxl::servo_torque(int8_t ON_OFF){
 
 void Dxl::servo_position(int32_t POS){
 // 角度範囲：0～4095（0度～360度）
+// 拡張位置制御モード：-1048575~1048575（-256~+256回転）
     cbuf[5]  = (unsigned char)0x09;    // 長さ（2バイト中，下位バイト）
     cbuf[6]  = (unsigned char)0x00;    // 長さ（2バイト中，上位バイト）
     cbuf[7]  = (unsigned char)0x03;    // コマンドの種類を示すバイト
